@@ -23,7 +23,9 @@ def display_ui
         return
     end
     result = execute(text)
-    puts result
+    result.each do |key, value| 
+        puts "#{key}: #{value}"
+    end
     display_ui
 end
 
